@@ -1,10 +1,10 @@
 package platformer.entities;
 
-import com.haxepunk.HXP;
-import com.haxepunk.Sfx;
-import com.haxepunk.graphics.Spritemap;
-import com.haxepunk.utils.Input;
-import com.haxepunk.utils.Key;
+import haxepunk.HXP;
+import haxepunk.Sfx;
+import haxepunk.graphics.Spritemap;
+import haxepunk.input.Input;
+import haxepunk.input.Key;
 import platformer.entities.Physics;
 
 private enum JumpStyle

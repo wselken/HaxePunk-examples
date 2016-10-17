@@ -1,11 +1,11 @@
 package platformer;
 
-import com.haxepunk.HXP;
-import com.haxepunk.Entity;
-import com.haxepunk.graphics.atlas.TextureAtlas;
-import com.haxepunk.graphics.Tilemap;
-import com.haxepunk.graphics.Backdrop;
-import com.haxepunk.masks.Grid;
+import haxepunk.HXP;
+import haxepunk.Entity;
+import haxepunk.graphics.atlas.TextureAtlas;
+import haxepunk.graphics.Tilemap;
+import haxepunk.graphics.Backdrop;
+import haxepunk.masks.Grid;
 import platformer.entities.Player;
 
 class GameScene extends DemoScene
