@@ -43,6 +43,9 @@ class MainScene extends Scene
 		add(e);
 
 		for (i in 0 ... 4) newAsteroid();
+
+		//camera.color = 0xffffff;
+		//camera.alpha = 0.1;
 	}
 
 	override public function update()

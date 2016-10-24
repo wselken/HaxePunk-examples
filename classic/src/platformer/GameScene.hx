@@ -6,11 +6,11 @@ import haxepunk.graphics.atlas.TextureAtlas;
 import haxepunk.graphics.Tilemap;
 import haxepunk.graphics.Backdrop;
 import haxepunk.masks.Grid;
+import haxepunk.utils.MathUtil;
 import platformer.entities.Player;
 
 class GameScene extends DemoScene
 {
-
 	private static var map:Array<Array<Int>> = [
 		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 		[1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1],
@@ -87,7 +87,7 @@ class GameScene extends DemoScene
 	public override function update()
 	{
 		backdrop.x += 1;
-		backdrop.y += 2 * HXP.sign(player.gravity.y);
+		backdrop.y += 2 * MathUtil.sign(player.gravity.y);
 		HXP.camera.x = player.x - HXP.halfWidth;
 		HXP.camera.y = player.y - HXP.halfHeight;
 		super.update();
@@ -96,5 +96,4 @@ class GameScene extends DemoScene
 	private var player:Player;
 	private var backdrop:Backdrop;
 	private var atlas:TextureAtlas;
-
 }

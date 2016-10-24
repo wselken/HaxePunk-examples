@@ -5,6 +5,7 @@ import haxepunk.Sfx;
 import haxepunk.graphics.Spritemap;
 import haxepunk.input.Input;
 import haxepunk.input.Key;
+import haxepunk.utils.MathUtil;
 import platformer.entities.Physics;
 
 private enum JumpStyle
@@ -56,7 +57,7 @@ class Player extends Physics
 			case Normal:
 				var sfx = new Sfx("sfx/jump.wav");
 				sfx.play(0.8);
-				acceleration.y = -HXP.sign(gravity.y) * kJumpForce;
+				acceleration.y = -MathUtil.sign(gravity.y) * kJumpForce;
 			case Gravity:
 				gravity.y = -gravity.y;
 			case Disable:
