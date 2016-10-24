@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="text" package="com.example.app" version="1.0.0" company=""/>
+
+	<app file="text" main="Main" path="bin"/>
+
+	<window fps="60" background="0x000000"/>
+	<window width="640" height="480" resizable="true" unless="mobile"/>
+	<window fullscreen="true" if="mobile"/>
+	<window orientation="landscape" vsync="true"/>
+	<window antialiasing="4"/>
+
+	<source path="src"/>
+
+	<haxelib name="HaxePunk"/>
+</project>
