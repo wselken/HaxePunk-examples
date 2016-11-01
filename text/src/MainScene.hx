@@ -30,27 +30,27 @@ class MainScene extends Scene
 		label.smooth = true;
 		addGraphic(label).y = ROW_HEIGHT * (++count);
 
-		var options:TextOptions = {size: 24, color: 0, border: {style: Outline, size: 1, color: 0xffffff, alpha: 0.75}}
-		var label = new Text("Outlined text", options);
+		var options:TextOptions = {size: 24, color: 0x808080, border: {style: FastOutline, size: 1, color: 0x00ff00, alpha: 0.75}}
+		var label = new Text("Fast outlined text (grey, green border)", options);
 		label.smooth = true;
 		addGraphic(label).y = ROW_HEIGHT * (++count);
 
-		var options:TextOptions = {size: 24, color: 0xff0000, border: {style: Outline, size: 4, color: 0xff0000, alpha: 0.5}}
-		var label = new Text("Big outlined text", options);
+		var options:TextOptions = {size: 24, color: 0xff0000, border: {style: Outline, size: 6, color: 0xff0000, alpha: 0.5}}
+		var label = new Text("Big outlined text (red, lighter red border)", options);
 		label.smooth = true;
 		addGraphic(label).y = ROW_HEIGHT * (++count);
 
-		var options:TextOptions = {size: 24, color: 0xffffff, border: {style: Shadow, size: 4, color: 0, alpha: 0.75}}
-		var label = new Text("Shadowed text", 0, 0, 0, 0, options);
+		var options:TextOptions = {size: 24, color: 0xffffff, border: {style: Shadow, size: 2, color: 0, alpha: 0.75}}
+		var label = new Text("Shadowed text (white, black shadow)", 0, 0, 0, 0, options);
 		label.smooth = true;
 		addGraphic(label).y = ROW_HEIGHT * (++count);
 
-		var options:TextOptions = {size: 24, color: 0, border: {style: Shadow, size: 2, color: 0xffffff, alpha: 0.75}}
-		var label = new Text("Inverted shadowed text", 0, 0, 0, 0, options);
+		var options:TextOptions = {size: 24, color: 0, border: {style: FastShadow, size: 2, color: 0xffffff, alpha: 0.75}}
+		var label = new Text("Fast shadowed text (black, white shadow)", 0, 0, 0, 0, options);
 		label.smooth = true;
 		addGraphic(label).y = ROW_HEIGHT * (++count);
 
-		var options:TextOptions = {size: 24, color: 0, border: {style: Outline, size: 2, color: 0xffffff, alpha: 1}}
+		var options:TextOptions = {size: 24, color: 0x808080, border: {style: Outline, size: 2, color: 0x000080, alpha: 1}}
 		var label = new Text("Rich text", options);
 		label.addStyle("blue", new flash.text.TextFormat(null, null, 0x0000ff));
 		label.addStyle("green", new flash.text.TextFormat(null, null, 0x00ff00));
