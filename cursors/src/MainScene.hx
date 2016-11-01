@@ -2,7 +2,7 @@ import haxepunk.Scene;
 import haxepunk.Entity;
 import haxepunk.graphics.Image;
 import haxepunk.HXP;
-import haxepunk.utils.Cursor;
+import haxepunk.Cursor;
 import haxepunk.input.Input;
 import haxepunk.input.Key;
 
